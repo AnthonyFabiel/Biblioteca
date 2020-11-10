@@ -3,10 +3,28 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AcercaComponent } from './acerca/acerca.component';
+import { ExplorarComponent } from './explorar/explorar.component';
+import { RegistrarComponent } from './registrar/registrar.component';
+import { IniciarComponent } from './iniciar/iniciar.component';
+import { RomanceComponent } from './romance/romance.component';
+import { ComediaComponent } from './comedia/comedia.component';
+import { TerrorComponent } from './terror/terror.component';
+import { CienciaComponent } from './ciencia/ciencia.component';
+import { CuentoComponent } from './cuento/cuento.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AcercaComponent,
+    ExplorarComponent,
+    RegistrarComponent,
+    IniciarComponent,
+    RomanceComponent,
+    ComediaComponent,
+    TerrorComponent,
+    CienciaComponent,
+    CuentoComponent
   ],
   imports: [
     BrowserModule,
