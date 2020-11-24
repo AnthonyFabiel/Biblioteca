@@ -12,6 +12,7 @@ import { ComediaComponent } from './comedia/comedia.component';
 import { TerrorComponent } from './terror/terror.component';
 import { CienciaComponent } from './ciencia/ciencia.component';
 import { CuentoComponent } from './cuento/cuento.component';
+import { CompraComponent } from './compra/compra.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CuentoComponent } from './cuento/cuento.component';
     ComediaComponent,
     TerrorComponent,
     CienciaComponent,
-    CuentoComponent
+    CuentoComponent,
+    CompraComponent
   ],
   imports: [
     BrowserModule,

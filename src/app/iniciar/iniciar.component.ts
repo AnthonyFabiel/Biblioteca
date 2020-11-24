@@ -29,7 +29,7 @@ export class IniciarComponent implements OnInit {
       Swal.fire('Debes ingresar la contraseña','','error')
       
     }else{
-      if(email=="hola123@gmail.com" && contra=="1234"){
+      if(email=="grupo2@gmail.com" && contra=="1234"){
         this.router.navigate(['/explorar'])
         Swal.fire({
           position: 'center',
