@@ -19,14 +19,26 @@
               <br>
             <h3>¿Y si quedamos como amigos?</h3>
             <br>
-            <p class="font-italic"> Elizabeth Eulberg </p>
+            
+
+            <p class="font-italic"> Elizabeth Eulberg  </p>
             <br>
             <br>   
             <ul>
               <li><i class="bx bx-check-double"></i> L. 866.26</li>
-              <button name="cancelar" id="procesar" class="btn  btn-success mt-4" >Agregar</button>
+              <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+              <input type="hidden" value="¿Y si quedamos como amigos?" #nombre>
+              <input type="hidden" value="866.26" #precio>
+              <input type="hidden" value="100" #envio2>
+              <input type="hidden" value="1" #id2>
+              <button type="submit" class="btn	btn-primary" (click)="guardar(id2.value,nombre.value ,precio.value,envio2.value)">Procesar!</button>
+              <button type="submit" class="btn	btn-success" (click)="facturar()" style="margin-left: 10px;" [routerLink]="['/comedia']" >Facturar</button>
+              <button type="submit" class="btn	btn-danger" (click)="eliminar()" style="margin-left: 10px;" [routerLink]="['/comedia']" >Eliminar</button>
+
+              <app-compra *ngFor="let d of productos" [productos]="d"></app-compra>
+              <!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+
             </ul>
-            
           </div>
         </div>
       </div>
@@ -49,7 +61,15 @@
             <br>   
             <ul>
               <li><i class="bx bx-check-double"></i> L. 776.69</li>
-              <button  name="cancelar" id="procesar" class="btn  btn-success mt-4" >Agregar</button>
+              <input type="hidden" value="Romeo y Julieta" #nombre>
+              <input type="hidden" value="776.69" #precio>
+              <input type="hidden" value="100" #envio2>
+              <input type="hidden" value="1" #id2>
+              <button type="submit" class="btn	btn-primary" (click)="guardar(id2.value,nombre.value ,precio.value,envio2.value)">Procesar!</button>
+              <button type="submit" class="btn	btn-success" (click)="facturar()" style="margin-left: 10px;" [routerLink]="['/comedia']" >Facturar</button>
+              <button type="submit" class="btn	btn-danger" (click)="eliminar()" style="margin-left: 10px;" [routerLink]="['/comedia']" >Eliminar</button>
+              <app-compra *ngFor="let d of productos" [productos]="d"></app-compra>
+              
             </ul>
           </div>
         </div>
@@ -73,8 +93,18 @@
             <br>   
             <ul>
               <li><i class="bx bx-check-double"></i>L. 342.33</li>
+              
+              <input type="hidden" value="El cuaderno de Noah" #nombre>
+              <input type="hidden" value="342.33" #precio>
+              <input type="hidden" value="100" #envio2>
+              <input type="hidden" value="1" #id2>
+              
+              <button type="submit" class="btn	btn-primary" (click)="guardar(id2.value,nombre.value ,precio.value,envio2.value)">Procesar!</button>
+              <button type="submit" class="btn	btn-success" (click)="facturar()" style="margin-left: 10px;" [routerLink]="['/comedia']" >Facturar</button>
+              <button type="submit" class="btn	btn-danger" (click)="eliminar()" style="margin-left: 10px;" [routerLink]="['/comedia']" >Eliminar</button>
+              <app-compra *ngFor="let d of productos" [productos]="d"></app-compra>
             </ul>
-            <button  name="cancelar" id="procesar" class="btn  btn-success mt-4" >Agregar</button>
+            
           </div>
         </div>
       </div>
@@ -97,8 +127,16 @@
             <br>   
             <ul>
               <li><i class="bx bx-check-double"></i>L. 196.07</li>
+              <input type="hidden" value="Mil lugares donde encontrarte" #nombre>
+              <input type="hidden" value="196.07" #precio>
+              <input type="hidden" value="100" #envio2>
+              <input type="hidden" value="1" #id2>
+              <button type="submit" class="btn	btn-primary" (click)="guardar(id2.value,nombre.value ,precio.value,envio2.value) " >Procesar!</button> 
+              <button type="submit" class="btn	btn-success" (click)="facturar()" style="margin-left: 10px;" [routerLink]="['/comedia']" >Facturar</button>
+              <button type="submit" class="btn	btn-danger" (click)="eliminar()" style="margin-left: 10px;" [routerLink]="['/comedia']" >Eliminar</button>
+              <app-compra *ngFor="let d of productos" [productos]="d"></app-compra>
             </ul>
-            <button  name="cancelar" id="procesar" class="btn  btn-success mt-4" >Agregar</button>
+            
           </div>
         </div>
       </div>

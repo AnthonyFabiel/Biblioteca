@@ -6,6 +6,16 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .selected:hover{
+      background-color:  #0585c0;
+      color: white;
+    } 
+    .seleccionada{
+      background-color:  #0585c0;
+      color: white;
+    }
+  </style>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -41,5 +51,39 @@
   
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('#procesar').click(function(){
+          agregar();
+
+        })
+        $('#cancelar').click(function(){
+          eliminar(id_fila_seleccionada);
+        })
+      })
+
+    
+      var cont=0;
+      function agregar(){
+        cont++;
+        var fila='<tr class="selected" id="fila'+cont+'" onclick="seleccionar(this.id);"><td>1</td><td>Nombre del libro</td><td>Precio del libro</td><td>Precio Envio</td><td>SubTotal</td><td>Impuesto</td><td>Total</td></tr>';
+        $('#tabla').append(fila);
+      }
+
+      function seleccionar(id_fila){
+        if($('#'+id_fila).hasClass('seleccionada')){
+          $('#'+id_fila).removeClass('seleccionada');
+        }
+        else{
+          $('#'+id_fila).addClass('seleccionada');
+        }
+        id_fila_seleccionada=id_fila;
+      }
+      function eliminar(id_fila){
+        $('#'+id_fila).remove();
+      }
+    
+    </script>
+
 </body>
 </html>

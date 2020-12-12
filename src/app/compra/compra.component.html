@@ -1,58 +1,40 @@
 <div class="container mt-3" data-aos="fade-up" >
     <div class="row">
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Nombre del libro</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Precio Envio</th>
-                <th scope="col">SubTotal</th>
-                <th scope="col">Impuesto</th>
-                <th scope="col">Total</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Romeo y Julieta</td>
-                <td>L. 776.69</td>
-                <td>L. 100.00</td>
-                <td>L. 876.69</td>
-                <td>L. 116.50</td>
-                <td>L. 993.19</td>
-                <button  name="cancelar" id="procesar" class="btn btn-danger mt-3" style="margin: 10px" >Cancelar</button>
-                <button name="cancelar" id="procesar" class="btn btn-primary mt-3" style="margin: 10px" >Procesar</button>
-                
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>El Principito</td>
-                <td>L. 4165.90</td>
-                <td>L. 100.00</td>
-                <td>L. 4265.90</td>
-                <td>L. 624.89</td>
-                <td>L. 4890.79</td>
-                <button  name="cancelar" id="procesar" class="btn btn-danger mt-3" style="margin: 10px" >Cancelar</button>
-                <button name="cancelar" id="procesar" class="btn btn-primary mt-3" style="margin: 10px" >Procesar</button>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Un Mundo Feliz</td>
-                <td>L. 1736.63</td>
-                <td>L. 100.00</td>
-                <td>L. 1836.63</td>
-                <td>L. 260.49</td>
-                <td>L. 2097.12</td>
-                <button  name="cancelar" id="procesar" class="btn btn-danger mt-3" style="margin: 10px" >Cancelar</button>
-                <button name="cancelar" id="procesar" class="btn btn-primary mt-3" style="margin: 10px" >Procesar</button>
-              </tr>
-            </tbody>
-            
-        </table>
+    <div class="col-md-4">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Envio</th>
+            <th scope="col">Subtotal</th>
+            <th scope="col">Impuesto</th>
+            <th scope="col">Total</th>
 
-        <button type="button" class="btn btn-block btn-primary" style="margin: 10px">Procesar todo</button>
-        <button type="button" class="btn btn-block btn-danger" style="margin: 10px">Cancelar todo</button>
+            
+            
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" >{{productos.id}}</th>
+            
+            <td>{{productos.nombre}}</td>
+            <td>{{productos.precio}}</td>
+            <td>{{productos.envio}}</td>
+            <td>{{productos.subtotal}}</td>
+            <td>{{productos.impuesto}}</td>
+            <td>{{productos.totalNeto}}</td>
+            
+          </tr>
+        </tbody>
+      </table>
+
+
+
+    </div>  
     </div>
     
 </div>
